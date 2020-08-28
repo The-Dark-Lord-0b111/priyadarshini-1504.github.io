@@ -1,0 +1,759 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+@font-face{
+  font-family: 'handwriting';
+  src: url('TheBohemianFree.otf'); 
+}
+
+/*priyadarshini heading*/
+#logo {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(214, 42, 56);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-shadow: #EDEDED 3px 2px 0;
+  position: relative;
+}
+
+#logo:after {
+  content:"priyadarshini";
+  position: absolute;
+  left: 8px;
+  top: 32px;
+}
+#logo:after {
+  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgb(214, 42, 56) 25%,rgb(214, 42, 56) 50%, transparent 50%, transparent 75%,rgb(214, 42, 56) 75%);
+  background-size: 4px 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: -5;
+  display: block;
+  text-shadow: none;
+}
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+/*Menu items*/
+#menu {
+  width: 85vw;
+  height: 42px;
+  list-style: none;
+  margin: 10px 0 0 0; padding: 25px 0px;
+  border-top: 4px double #AAA;
+  border-bottom: 4px double #AAA;
+  position: relative;
+  text-align: left;
+}
+#menu li {
+  display: inline-block;
+  width: 173px;
+  margin: 0 10px;
+  position: relative;
+  -webkit-transform: skewy(-3deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 200ms all;
+}
+#menu li a {
+  text-transform: uppercase;
+  font-family: 'Squada One', cursive;
+  font-weight: 800;
+  display: block;
+  background: #FFF;
+  padding: 2px 10px;
+  color: #333;
+  font-size: 35px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  text-shadow: 
+		1px 1px 0px #FFF, 
+		2px 2px 0px #999,
+		3px 3px 0px #FFF;
+	background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.05) 100%);
+	-webkit-transition: 1s all;
+	background-image: -webkit-linear-gradient(left top, 
+		transparent 0%, transparent 25%, 
+		rgba(0,0,0,.15) 25%, rgba(0,0,0,.15) 50%, 
+		transparent 50%, transparent 75%, 
+		rgba(0,0,0,.15) 75%);
+  background-size: 4px 4px;
+	box-shadow: 
+		0 0 0 1px rgba(0,0,0,.4) inset, 
+		0 0 20px -5px rgba(0,0,0,.4),
+		0 0 0px 3px #FFF inset;
+}
+#menu li:hover {
+	width: 203px;
+	margin: 0 -5px;
+}
+#menu a:hover {
+  color:rgb(214, 42, 56);
+}
+#menu li:after,
+#menu li:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background: #BBB;
+  -webkit-transform: skewY(8deg);
+  x-index: -3;
+	border-radius: 4px;
+}
+#menu li:after {
+	background-image: -webkit-linear-gradient(left, transparent 0%, rgba(0,0,0,.4) 100%);
+  right: 0;
+  top: -4px; 
+}
+#menu li:before {
+  left: 0;
+  bottom: -4px;
+	background-image: -webkit-linear-gradient(right, transparent 0%, rgba(0,0,0,.4) 100%);
+}
+
+/*My picture*/
+#mypic{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding:30px;
+  display: block; 
+  margin-left: 10px; margin-right: 15px;
+  width: 50%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+#mypic:hover {
+-webkit-filter: grayscale(0);
+filter: grayscale(0);
+}
+
+body {
+  padding: 20px 80px;
+  background: url(https://subtlepatterns.com/patterns/lined_paper.png);
+}
+
+/*Dividing into 2 columns*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-1 {
+  float: left;
+  width: 50%;
+}
+.column-2 {
+  float: right;
+  width: 50%;
+}
+
+/*Speech bubble*/
+blockquote.bubble { 
+	background-position: center;
+  background-repeat: no-repeat !important;
+	background-size: 100% 100%;
+  margin: 70px auto;
+	text-align: center;
+	height: 0;
+	box-sizing: content-box;
+	line-height: 1;
+}
+blockquote.speech {
+  font-family:'handwriting';
+  font-size:20px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/speech-bubble.svg); 
+  width: 55%;
+  padding-top: 16%;
+	padding-bottom: 40%;
+}
+
+/*About Me*/
+#subsec {
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(214, 42, 56);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    border-top: 4px double #AAA;
+  }
+  #subsec:after {
+    content:"about me";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    border-bottom: 4px double #AAA;
+  }
+  #subsec:after {
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgb(214, 42, 56) 25%,rgb(214, 42, 56) 50%, transparent 50%, transparent 75%,rgb(214, 42, 56) 75%);
+background-size: 4px 4px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+z-index: -5;
+display: block;
+text-shadow: none;
+    
+  }
+
+  /*Skills*/
+  #subsec1 {
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(214, 42, 56);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    border-top: 4px double #AAA;
+  }
+  #subsec1:after {
+    content:"skills";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    border-bottom: 4px double #AAA;
+  }
+  #subsec1:after {
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgb(214, 42, 56) 25%,rgb(214, 42, 56) 50%, transparent 50%, transparent 75%,rgb(214, 42, 56) 75%);
+background-size: 4px 4px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+z-index: -5;
+display: block;
+text-shadow: none;
+  }
+
+  /*Education*/
+  #subsec2 {
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(214, 42, 56);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    border-top: 4px double #AAA;
+  }
+  #subsec2:after {
+    content:"education";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    border-bottom: 4px double #AAA;
+  }
+  #subsec2:after {
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgb(214, 42, 56) 25%,rgb(214, 42, 56) 50%, transparent 50%, transparent 75%,rgb(214, 42, 56) 75%);
+background-size: 4px 4px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+z-index: -5;
+display: block;
+text-shadow: none;
+  }
+
+  /*Experience*/
+  #subsec3 {
+    font-family: 'Open Sans', sans-serif;
+    color:rgb(214, 42, 56);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    border-top: 4px double #AAA;
+  }
+  #subsec3:after {
+    content:"experience";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    border-bottom: 4px double #AAA;
+  }
+  #subsec3:after {
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgb(214, 42, 56) 25%,rgb(214, 42, 56) 50%, transparent 50%, transparent 75%,rgb(214, 42, 56) 75%);
+background-size: 4px 4px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+z-index: -5;
+display: block;
+text-shadow: none;
+  }
+
+  /*Contact*/
+  #subsec4 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(214, 42, 56);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 70px;
+    text-align: left;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
+    border-top: 4px double #AAA;
+  }
+  #subsec4:after {
+    content:"contact me";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    border-bottom: 4px double #AAA;
+  }
+  #subsec4:after {
+  -webkit-background-clip: text;
+  background-clip: text;
+
+/* Animate Background Image */
+
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-backface-visibility: hidden;
+background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, rgb(214, 42, 56) 25%,rgb(214, 42, 56) 50%, transparent 50%, transparent 75%,rgb(214, 42, 56) 75%);
+background-size: 4px 4px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+z-index: -5;
+display: block;
+text-shadow: none;
+  }
+
+  /*Experience timeline*/
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 10px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #eee;
+  color: rgb(0, 0, 0);
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+div time{
+  position:right;
+  right: 110%;
+  font-family:'Open Sans';
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 150px;
+  padding: 10px;
+  border: .5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background:transparent;
+  font-family:'Open Sans';
+}
+
+.timeline ul li div:hover {
+  background-color: rgb(211, 240, 241);
+  color: #009688;
+}
+ 
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 15px;
+}
+ 
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent rgb(2, 49, 47) transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -195px;
+}
+ 
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent rgb(2, 49, 47) transparent ;
+}
+
+/*Image on the right*/
+  #img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    float: right;
+    border: 3px solid #AAA;
+    padding: 10px;
+    overflow: auto;
+    -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+}
+#img:hover {
+	-webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/*Image on the left*/
+#img1{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    float: left;
+    border: 3px solid #AAA;
+    padding: 10px;
+    overflow: auto;
+    -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
+  }
+  #img1:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+
+  /*Animation for schhol->college image*/
+  .hold{
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    display: block;
+    height: 600px;
+    margin-top:-130px
+  }
+  .page-holder{
+    height: 600px;
+    width: 1000px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  a.link{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    float: right;
+    right: 400px;
+    position: relative;
+  }
+  .page{
+    height: 200%;
+    width: 100%;
+    top: -50%;
+    left: -50%;
+    position: absolute;
+    overflow: hidden;
+    transform: rotateZ(-30deg);
+    transition: transform 1s, left 1s;
+    transform-origin: 100% 37.5%;
+  }
+  .page>.front,
+  .page .back-holder,
+  .page .back{
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    background-size: cover;
+    transition: transform 1s, left 1s;
+    background-color: black;
+    color: white;
+  }
+  .page>.front{
+    top: 37.5%;
+    left: 50%;
+    transform: rotateZ(30deg) translateX(0);
+    transform-origin: 100% 0%;
+    
+  }
+  .page .back-holder{
+    left: 100%;
+    top: 0;
+    transition: left 1s, transform 1s;
+    transform-origin: 0% 0%;
+    transform: rotateZ(-60deg);
+  }
+  .page .back{
+    left: 0%;
+    top: 0;
+    transform: rotateZ(0deg);
+    transform-origin: 0% 0%;
+    transition: top 1s, left 1s;
+  }
+  .page .back:after{
+    content: ' ';
+    position: absolute;
+    height: 100%;
+    transform: rotateZ(-0.7deg);
+    transform-origin: 0% 100%;
+    width: 100%;
+  }
+  .page-holder:hover .page{
+    transform: rotateZ(-0deg);
+    left: -50%;
+  }
+  .page-holder:hover .page>.front{
+    transform: rotateZ(0deg) translateX(100%);
+  }
+  .page-holder:hover .back-holder{
+    left: 0%;
+    transform: rotateZ(0deg);
+  }
+  .page-holder:hover .back{
+    left: -100%;
+  }
+  
+  
+h1{
+  font-family: 'Squada One', cursive;
+  font-weight: 500;
+  display: block;
+  padding: 5px 5px;
+  color: #333;
+  font-size: 35px;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+}
+#text{
+    font-family: Lato, 'Open Sans';
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+    color: #333;
+    font-size: 25px;
+    text-align: left;
+    text-decoration: none;
+    position: relative; 
+}
+#handwriting{
+  font-family: handwriting;
+  font-weight: 500;
+  display: block;
+  padding: 5px;
+  color: #333;
+  font-size: 25px;
+  text-align: left;
+  text-decoration: none;
+  position: relative; 
+}
+#text1{
+  font-family: Lato, 'Open Sans';
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+    color: #333;
+    font-size: 15px;
+    text-align: left;
+    text-decoration: none;
+    position: relative; 
+}
+
+/*Resume download button*/
+.buttonDownload {
+	display: inline-block;
+	position: relative;
+	padding: 20px 25px;
+  
+	background-color: #000000;
+	color: white;
+  
+	font-family: 'Open Sans';
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	text-indent: 15px;
+}
+
+.buttonDownload:hover {
+	background-color: #333;
+	color: white;
+}
+
+.buttonDownload:before, .buttonDownload:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 15px;
+	top: 52%;
+}
+
+/* Download box shape  */
+.buttonDownload:before {
+	width: 10px;
+	height: 2px;
+	border-style: solid;
+	border-width: 0 2px 2px;
+}
+
+/* Download arrow shape */
+.buttonDownload:after {
+	width: 0;
+	height: 0;
+	margin-left: 3px;
+	margin-top: -7px;
+  
+	border-style: solid;
+	border-width: 4px 4px 0 4px;
+	border-color: transparent;
+	border-top-color: inherit;
+	
+	animation: downloadArrow 2s linear infinite;
+	animation-play-state: paused;
+}
+
+.buttonDownload:hover:before {
+	border-color: #4CC713;
+}
+
+.buttonDownload:hover:after {
+	border-top-color: #4CC713;
+	animation-play-state: running;
+}
+
+/* keyframes for the download icon anim */
+@keyframes downloadArrow {
+	0% {
+		margin-top: -7px;
+		opacity: 1;
+	}
+	
+	0.001% {
+		margin-top: -15px;
+		opacity: 0;
+	}
+	
+	50% {
+		opacity: 1;
+	}
+	
+	100% {
+		margin-top: 0;
+		opacity: 0;
+	}
+}
+
+/*Form css details*/
+textarea {
+width: 75%;
+}
+.button-success {
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(0, 0, 0); 
+}
+.button-xlarge {
+  font-size: 125%;
+}
+button {
+  float: right;
+}
+#name, #email {
+  width: 50%;
+}
+.honeypot-field {
+  display: none;
+}
+
